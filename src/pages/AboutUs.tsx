@@ -3,18 +3,19 @@ import React from "react";
 import Layout from "./Layout";
 import { useNavigate } from "react-router-dom";
 
+import image1 from "../../public/aboutpic.jpg";
+
 const headerProps = {
   home: "/#home",
   initiatives: "/#initiatives",
   leadershipPanel: "/panel-of-rise",
   network: "/#network",
   contact: "/#contact",
-  aboutUs: "/about-us"
+  aboutUs: "/about-us",
 };
 
 const AboutUs = () => {
-
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <Layout headerProps={headerProps}>
       <article className="min-h-screen bg-gray-900 ">
@@ -30,22 +31,24 @@ const AboutUs = () => {
           {/* Opening Paragraph */}
           <section className="mb-16">
             <p className="font-inter text-lg md:text-xl leading-relaxed text-white text-justify">
-              In the early decades of the 21st century, a revolutionary movement
-              began to take shape across the globe. Born from the intersection
-              of technological innovation and social consciousness, RISE emerged
-              as more than just an organization—it became a symbol of hope for
-              millions who believed in the power of collective action to create
-              meaningful change. The story of RISE is not merely one of
-              institutional growth, but a testament to the enduring human spirit
-              and our capacity to envision and build a better future together.
+              RISE began as a passionate initiative led by a former National
+              Service Scheme (NSS) volunteer at Government Brennen College,
+              Dharmadam, Kerala, during 2022–2024. What started as a modest,
+              student-driven effort has since grown into a dynamic platform
+              dedicated to building a multidisciplinary student network across
+              India and beyond. At its core, RISE aims to create a collaborative
+              ecosystem that connects students from diverse academic
+              backgrounds. The platform encourages meaningful dialogue around
+              knowledge-sharing, critical thinking, social awareness, and the
+              practical skills essential for holistic student development.
             </p>
           </section>
 
           {/* Historical Image */}
           <figure className="mb-16">
-            <div className="relative w-full h-64 md:h-80 lg:h-96 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+            <div className="relative w-full h-64 md:h-80 lg:h-[650px] bg-gray-100 rounded-lg overflow-hidden shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+                src={image1}
                 alt="Group of people collaborating around digital displays and technology"
                 className="w-full h-full object-cover filter grayscale"
               />
@@ -73,82 +76,40 @@ const AboutUs = () => {
                 className="font-inter text-base md:text-lg font-semibold text-white not-italic"
                 style={{ fontVariant: "small-caps" }}
               >
-                — Sidharth Puthalath
+                — Realm of Indispensable Studies Empowerment
               </cite>
             </div>
           </section>
 
           {/* Inauguration Section */}
           <section className="mb-16">
-            <h2 className="font-georgia text-2xl md:text-3xl font-semibold text-white mb-6 pb-2 border-b-2 border-emerald-600">
-              Inauguration and Launch
-            </h2>
+            
             <p className="font-inter text-lg leading-relaxed text-white text-justify mb-6">
-              The formal inauguration of RISE took place on a crisp autumn
-              morning in 2019, when a small group of visionaries gathered in a
-              converted warehouse space to sign the founding charter. What began
-              as weekly meetings in coffee shops and community centers had
-              evolved into something far more substantial—a movement with clear
-              objectives and an unwavering commitment to positive
-              transformation.
+              The movement first brought together 21 students from different
+              departments, organizing informal, student-led events on campus.
+              Recognizing its potential, the initiative was later formalized as
+              an undergraduate project under the BA Functional English program.
+              The student who led this transformation even chose RISE as the
+              subject of his academic research.
+              Following graduation, he enrolled in a Master’s program at the
+              same institution, this time with a greater purpose: to turn this
+              idea into a fully accessible platform for over 2,500 students on
+              campus.
+              On October 10, 2024, RISE was officially launched. Today, it is
+              proudly supported by the college administration and the Career
+              Guidance and Placement Cell of Government Brennen College,
+              Dharmadam. The platform remains inclusive and open to all
+              students, prioritizing personal, academic, and social development.
             </p>
-            <p className="font-inter text-lg leading-relaxed text-white text-justify mb-6">
-              The launch event itself was deliberately modest, reflecting the
-              organization's core values of humility and grassroots engagement.
-              Rather than grand proclamations or elaborate ceremonies, the
-              founders chose to mark the occasion with a series of community
-              workshops and listening sessions, ensuring that RISE would remain
-              grounded in the real needs and aspirations of the people it sought
-              to serve.
-            </p>
+           
 
-            {/* Inauguration Images */}
-            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <Card className="overflow-hidden">
-                <CardContent className="p-0">
-                  <img
-                    src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Person using laptop during inauguration planning"
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-4">
-                    <p className="text-sm text-gray-600">
-                      Early planning sessions for the RISE inauguration
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card className="overflow-hidden">
-                <CardContent className="p-0">
-                  <img
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Woman working on launch preparations"
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-4">
-                    <p className="text-sm text-gray-600">
-                      Preparing digital materials for the launch event
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </section>
 
-          {/* Expanding Mission Section */}
-          <section className="mb-16">
-            <h2 className="font-georgia text-2xl md:text-3xl font-semibold text-gray-900 mb-6 pb-2 border-b-2 border-emerald-600">
-              An Expanding Mission
-            </h2>
             <p className="font-inter text-lg leading-relaxed text-white text-justify mb-6">
-              As RISE gained momentum throughout its early years, the scope of
-              its mission naturally expanded to encompass broader societal
-              challenges. What had initially focused on local community
-              development soon evolved to address systemic issues affecting
-              entire regions and, eventually, global concerns that demanded
-              coordinated international response.
-            </p>
-            <p className="font-inter text-lg leading-relaxed text-white text-justify mb-6">
+              RISE is now scaling up its vision nationwide, fostering
+              connections between students at premier institutions and regional
+              colleges through the RISE Student Panel — a dedicated board of
+              student leaders from across disciplines and academic institutions
+              across India and abroad.
               This expansion was not the result of organizational ambition, but
               rather a natural response to the interconnected nature of the
               challenges facing modern society. Climate change, technological
@@ -157,19 +118,36 @@ const AboutUs = () => {
               collaborative approach that had become RISE's defining
               characteristic.
             </p>
+            
+
+          </section>
+
+          {/* Expanding Mission Section */}
+          <section className="mb-16">
+            <h2 className="font-georgia text-2xl md:text-3xl font-semibold text-white mb-6 pb-2 ">
+              Our Programs
+            </h2>
             <p className="font-inter text-lg leading-relaxed text-white text-justify mb-6">
-              By 2023, RISE had established chapters in over forty countries,
-              each adapted to local contexts while maintaining the core
-              principles that had guided the movement from its inception. The
-              organization's ability to scale while preserving its foundational
-              values became a model studied by researchers and adopted by other
-              movements seeking to create lasting, positive change in an
-              increasingly complex world.
+              <span className="font-extrabold">Career Mapping Initiative : </span>A
+              program designed for school students to help them discover their
+              individual strengths and gain early direction toward meaningful,
+              purpose-driven career paths.
+            </p>
+            <p className="font-inter text-lg leading-relaxed text-white text-justify mb-6">
+              <span className="font-extrabold ">Graduate Nexus : </span>A structured
+              program for college students that enhances academic and
+              professional preparedness through multidisciplinary collaboration,
+              skill-building, and peer-to-peer learning.
             </p>
 
             {/* Mission Images */}
-            <div className="mt-6 w-full justify-center items-center">
-              <Card onClick={() => { navigate('/panel-of-rise')}} className="overflow-hidden cursor-pointer">
+            <div className="mt-6 w-full justify-center items-center" >
+              <Card
+                onClick={() => {
+                  navigate("/panel-of-rise");
+                }}
+                className="overflow-hidden cursor-pointer"
+              >
                 <CardContent className="p-0">
                   <img
                     src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -183,17 +161,14 @@ const AboutUs = () => {
                   </div>
                 </CardContent>
               </Card>
-              
             </div>
+
+            <p className="mt-10 w-full pl-20 pr-20 align-middle text-center">
+              RISE continues to grow as a beacon of inclusive education, student empowerment, and collaborative learning, shaping confident, socially aware, and future-ready individuals across academic communities.
+            </p>
           </section>
 
-          {/* Footer */}
-          <footer className="mt-20 pt-8 border-t border-gray-200">
-            <p className="text-center text-sm text-gray-500 font-inter">
-              This historical account continues to evolve as RISE writes new
-              chapters in its ongoing story of emergence and growth.
-            </p>
-          </footer>
+        
         </div>
       </article>
     </Layout>

@@ -8,7 +8,7 @@ const headerProps = {
   leadershipPanel: "/panel-of-rise",
   network: "/#network",
   contact: "/#contact",
-  aboutUs: "/#about-us"
+  aboutUs: "/about-us"
 };
 
 const PanelOfRise = () => {

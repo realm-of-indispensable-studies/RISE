@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 type HeaderProps = {
   home: string;
   initiatives: string;
-  leadershipPanel: string;
   network: string;
   contact: string;
   aboutUs: string;
@@ -21,7 +20,6 @@ const Header = (props: HeaderProps) => {
   const navMap = [
     { label: "Home", href: props.home },
     { label: "Initiatives", href: props.initiatives },
-    { label: "Leadership Panel", href: props.leadershipPanel },
     { label: "More", href: props.network },
     { label: "Contact", href: props.contact },
     { label: "About Us", href: props.aboutUs },

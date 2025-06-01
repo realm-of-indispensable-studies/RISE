@@ -12,6 +12,8 @@ import GraguateNexus from "./pages/GraguateNexus";
 import MultiDisciplinary from "./pages/MultiDisciplinary";
 import ClubDeRise from "./pages/ClubDeRise";
 import NewsLetters from "./pages/NewsLetters";
+import ScrollToTop from "@/components/ScrollToTop";
+
 
 const queryClient = new QueryClient();
 
@@ -21,6 +23,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about-us" element={<AboutUs />} />

@@ -88,7 +88,7 @@ const NewsSection = () => {
           ))}
         </div>
 
-        <div className="text-center">
+        {/* <div className="text-center">
           <Button 
             size="lg"
             variant="outline"
@@ -96,7 +96,7 @@ const NewsSection = () => {
           >
             View All News & Updates
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

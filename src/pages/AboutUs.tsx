@@ -83,43 +83,36 @@ const AboutUs = () => {
 
           {/* Inauguration Section */}
           <section className="mb-16">
-            
             <p className="font-inter text-lg leading-relaxed text-white text-justify mb-6">
               The movement first brought together 21 students from different
               departments, organizing informal, student-led events on campus.
               Recognizing its potential, the initiative was later formalized as
               an undergraduate project under the BA Functional English program.
               The student who led this transformation even chose RISE as the
-              subject of his academic research.
-              Following graduation, he enrolled in a Master’s program at the
-              same institution, this time with a greater purpose: to turn this
-              idea into a fully accessible platform for over 2,500 students on
-              campus.
-              On October 10, 2024, RISE was officially launched. Today, it is
-              proudly supported by the college administration and the Career
-              Guidance and Placement Cell of Government Brennen College,
-              Dharmadam. The platform remains inclusive and open to all
-              students, prioritizing personal, academic, and social development.
+              subject of his academic research. Following graduation, he
+              enrolled in a Master’s program at the same institution, this time
+              with a greater purpose: to turn this idea into a fully accessible
+              platform for over 2,500 students on campus. On October 10, 2024,
+              RISE was officially launched. Today, it is proudly supported by
+              the college administration and the Career Guidance and Placement
+              Cell of Government Brennen College, Dharmadam. The platform
+              remains inclusive and open to all students, prioritizing personal,
+              academic, and social development.
             </p>
-           
-
 
             <p className="font-inter text-lg leading-relaxed text-white text-justify mb-6">
               RISE is now scaling up its vision nationwide, fostering
               connections between students at premier institutions and regional
               colleges through the RISE Student Panel — a dedicated board of
               student leaders from across disciplines and academic institutions
-              across India and abroad.
-              This expansion was not the result of organizational ambition, but
-              rather a natural response to the interconnected nature of the
-              challenges facing modern society. Climate change, technological
-              disruption, economic inequality, and social fragmentation could
-              not be addressed in isolation—they required the kind of holistic,
-              collaborative approach that had become RISE's defining
-              characteristic.
+              across India and abroad. This expansion was not the result of
+              organizational ambition, but rather a natural response to the
+              interconnected nature of the challenges facing modern society.
+              Climate change, technological disruption, economic inequality, and
+              social fragmentation could not be addressed in isolation—they
+              required the kind of holistic, collaborative approach that had
+              become RISE's defining characteristic.
             </p>
-            
-
           </section>
 
           {/* Expanding Mission Section */}
@@ -128,20 +121,22 @@ const AboutUs = () => {
               Our Programs
             </h2>
             <p className="font-inter text-lg leading-relaxed text-white text-justify mb-6">
-              <span className="font-extrabold">Career Mapping Initiative : </span>A
-              program designed for school students to help them discover their
+              <span className="font-extrabold">
+                Career Mapping Initiative :{" "}
+              </span>
+              A program designed for school students to help them discover their
               individual strengths and gain early direction toward meaningful,
               purpose-driven career paths.
             </p>
             <p className="font-inter text-lg leading-relaxed text-white text-justify mb-6">
-              <span className="font-extrabold ">Graduate Nexus : </span>A structured
-              program for college students that enhances academic and
+              <span className="font-extrabold ">Graduate Nexus : </span>A
+              structured program for college students that enhances academic and
               professional preparedness through multidisciplinary collaboration,
               skill-building, and peer-to-peer learning.
             </p>
 
             {/* Mission Images */}
-            <div className="mt-6 w-full justify-center items-center" >
+            <div className="mt-6 w-full justify-center items-center">
               <Card
                 onClick={() => {
                   navigate("/panel-of-rise");
@@ -149,26 +144,29 @@ const AboutUs = () => {
                 className="overflow-hidden cursor-pointer"
               >
                 <CardContent className="p-0">
-                  <img
-                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Monitor showing programming code representing technological expansion"
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-4 bg-gray-800">
-                    <p className="w-full flex justify-center items-center font-bold text-md text-white">
-                      Technological infrastructure supporting global expansion
-                    </p>
+                  <div className="relative w-full h-64">
+                    <img
+                      src="https://images.unsplash.com/photo-1519309621146-2a47d1f7103a?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt="Monitor showing programming code representing technological expansion"
+                      className="w-full h-64 object-cover"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+                      <p className="font-bold text-3xl text-white text-center px-2 opacity-70">
+                        Our Leadership!
+                      </p>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
             </div>
 
-            <p className="mt-10 w-full pl-20 pr-20 align-middle text-center">
-              RISE continues to grow as a beacon of inclusive education, student empowerment, and collaborative learning, shaping confident, socially aware, and future-ready individuals across academic communities.
+            <p className="mt-10 w-full md:pl-20 pr-20 align-middle text-center">
+              RISE continues to grow as a beacon of inclusive education, student
+              empowerment, and collaborative learning, shaping confident,
+              socially aware, and future-ready individuals across
+              academic communities.
             </p>
           </section>
-
-        
         </div>
       </article>
     </Layout>

@@ -1,12 +1,13 @@
 import LeadershipProfile from "./LeadershipProfile";
+import Sidharth from '../../public/sidharth.jpg'
 
 const mockLeadershipData = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    title: "Chief Executive Officer",
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=200&h=200&fit=crop&crop=face",
-    linkedinUrl: "https://linkedin.com/in/sarah-johnson"
+    name: "Sidharth P",
+    title: "Panel Member",
+    image: Sidharth,
+    linkedinUrl: "http://linkedin.com/in/sidharth-puthalath-b790142aa"
   },
   {
     id: 2,

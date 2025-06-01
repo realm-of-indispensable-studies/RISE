@@ -5,7 +5,6 @@ import Footer from '../components/Footer';
 type HeaderProps = {
   home: string;
   initiatives: string;
-  leadershipPanel: string;
   network: string;
   contact: string;
   aboutUs: string;

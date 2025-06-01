@@ -17,7 +17,7 @@ const LeadershipProfile = ({ name, title, image, linkedinUrl }: LeadershipProfil
           <img
             src={image}
             alt={name}
-            className="w-full h-36 cursor-pointer rounded-t-md mx-auto object-cover shadow-md group-hover:shadow-lg transition-shadow duration-300"
+            className="w-full h-44 cursor-pointer rounded-t-md mx-auto object-cover shadow-md group-hover:shadow-lg transition-shadow duration-300"
           />
         </div>
         <h3 className="font-semibold text-lg mb-2 text-black">{name}</h3>

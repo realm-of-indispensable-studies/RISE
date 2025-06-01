@@ -2,6 +2,7 @@ import React from 'react';
 import BrandCard from '../components/BrandCard';
 import BackToTop from '../components/BackToTop';
 import Layout from './Layout';
+import { useNavigate } from 'react-router-dom';
 
 const headerProps = {
   home: "/#home",
@@ -14,18 +15,22 @@ const headerProps = {
 
 
 const CareerMapping = () => {
+  const navigate = useNavigate();
+
   const brands = [
     {
       id: 1,
       title: "Online Workshop Series",
       tagline: "Interactive digital learning sessions designed to enhance your professional skills and career development through expert-led workshops.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      navigate: () => navigate('/offline-session')
     },
     {
       id: 2,
       title: "Offline Session",
       tagline: "In-person networking and learning opportunities that provide hands-on experience and direct mentorship from industry leaders.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      navigate: () => navigate('/online-session')
     },
     
   ];
@@ -68,7 +73,7 @@ const CareerMapping = () => {
                 image={brand.image}
                 title={brand.title}
                 tagline={brand.tagline}
-                onClick={() => handleBrandClick(brand.title)}
+                onClick={brand.navigate}
               />
             ))}
           </div>

@@ -27,12 +27,7 @@ const CareerMapping = () => {
       tagline: "In-person networking and learning opportunities that provide hands-on experience and direct mentorship from industry leaders.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
-    {
-      id: 3,
-      title: "Lakshyam",
-      tagline: "Goal-oriented career guidance program that helps you chart your professional journey with personalized mentoring and strategic planning.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-    }
+    
   ];
 
   const handleBrandClick = (brandTitle: string) => {
@@ -66,7 +61,7 @@ const CareerMapping = () => {
         {/* Brand Cards Section */}
         <section>
          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {brands.map((brand) => (
               <BrandCard
                 key={brand.id}

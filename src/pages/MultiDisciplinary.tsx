@@ -35,17 +35,7 @@ const MultiDisciplinary = () => {
                   traditional disciplinary boundaries, leading to innovative
                   solutions for complex global challenges.
                 </p>
-                <p className="text-white text-lg md:text-xl leading-relaxed text-justify mt-6">
-                  Addressing issues such as climate change, public health
-                  crises, and technological advancements necessitates holistic
-                  approaches that draw upon multiple domains of knowledge. While
-                  specialized expertise remains valuable, the siloed nature of
-                  traditional disciplines often falls short in tackling
-                  multifaceted problems. Multidisciplinary collaboration
-                  encourages the integration of varied perspectives, promoting
-                  comprehensive understanding and effective problem-solving.{" "}
-                </p>
-
+                
                 <p className="text-white text-lg md:text-xl leading-relaxed text-justify mt-6">
                   The success of these networks lies not only in combining
                   different areas of expertise but also in cultivating new
@@ -55,13 +45,7 @@ const MultiDisciplinary = () => {
                   collaborative skills that complement their technical
                   knowledge.{" "}
                 </p>
-                <p className="text-white text-lg md:text-xl leading-relaxed text-justify mt-6">
-                  As we advance into a more complex and interconnected era, the
-                  importance of multidisciplinary networks will continue to
-                  grow. They signify a fundamental shift in our approach to
-                  knowledge creation and innovation, enabling us to address
-                  humanity's most pressing challenges more effectively.
-                </p>
+                
               </div>
 
               {/* Image Section */}
@@ -89,6 +73,15 @@ const MultiDisciplinary = () => {
                 </figcaption>
               </figure>
 
+              {/* Call to Action or Conclusion */}
+              <div className="border-l-4 border-emerald-600 pl-6 my-8">
+                <p className="text-white text-lg italic leading-relaxed">
+                  "The future belongs to those who can navigate the
+                  intersections between disciplines, building bridges where
+                  others see boundaries."
+                </p>
+              </div>
+
               {/* Continued Content */}
               <div className="prose prose-lg max-w-none">
                 <p className="text-white text-lg md:text-xl leading-relaxed text-justify">
@@ -102,9 +95,6 @@ const MultiDisciplinary = () => {
                   accessibility and inclusivity, reaching students in remote
                   areas and providing them with opportunities to engage in
                   interdisciplinary dialogue and projects.
-                </p>
-
-                <p className="text-white text-lg md:text-xl leading-relaxed text-justify mt-6">
                   This endeavor resonates with the objectives of the National
                   Education Policy 2020, which advocates for a holistic and
                   multidisciplinary approach to education, preparing learners to
@@ -113,14 +103,7 @@ const MultiDisciplinary = () => {
                 </p>
               </div>
 
-              {/* Call to Action or Conclusion */}
-              <div className="border-l-4 border-emerald-600 pl-6 my-8">
-                <p className="text-white text-lg italic leading-relaxed">
-                  "The future belongs to those who can navigate the
-                  intersections between disciplines, building bridges where
-                  others see boundaries."
-                </p>
-              </div>
+              
             </section>
 
             {/* Join our Network Section */}

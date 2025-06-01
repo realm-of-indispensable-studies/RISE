@@ -31,7 +31,7 @@ const AboutUs = () => {
           {/* Opening Paragraph */}
           <section className="mb-16">
             <p className="font-inter text-lg md:text-xl leading-relaxed text-white text-justify">
-              RISE began as a passionate initiative led by a former National
+              RISE began as a passionate initiative led by a National
               Service Scheme (NSS) volunteer at Government Brennen College,
               Dharmadam, Kerala, during 2022–2024. What started as a modest,
               student-driven effort has since grown into a dynamic platform
@@ -98,20 +98,11 @@ const AboutUs = () => {
               Cell of Government Brennen College, Dharmadam. The platform
               remains inclusive and open to all students, prioritizing personal,
               academic, and social development.
-            </p>
-
-            <p className="font-inter text-lg leading-relaxed text-white text-justify mb-6">
               RISE is now scaling up its vision nationwide, fostering
               connections between students at premier institutions and regional
               colleges through the RISE Student Panel — a dedicated board of
               student leaders from across disciplines and academic institutions
-              across India and abroad. This expansion was not the result of
-              organizational ambition, but rather a natural response to the
-              interconnected nature of the challenges facing modern society.
-              Climate change, technological disruption, economic inequality, and
-              social fragmentation could not be addressed in isolation—they
-              required the kind of holistic, collaborative approach that had
-              become RISE's defining characteristic.
+              across India and abroad.
             </p>
           </section>
 
@@ -141,14 +132,14 @@ const AboutUs = () => {
                 onClick={() => {
                   navigate("/panel-of-rise");
                 }}
-                className="overflow-hidden cursor-pointer"
+                className="overflow-hidden cursor-pointer border-[#6a6464]"
               >
                 <CardContent className="p-0">
-                  <div className="relative w-full h-64">
+                  <div className="relative w-full h-72">
                     <img
                       src="https://images.unsplash.com/photo-1519309621146-2a47d1f7103a?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt="Monitor showing programming code representing technological expansion"
-                      className="w-full h-64 object-cover"
+                      className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
                       <p className="font-bold text-3xl text-white text-center px-2 opacity-70">

@@ -114,25 +114,6 @@ const Header = (props: HeaderProps) => {
                 </a>
               ))}
 
-              {/* Mobile Logo Upload */}
-              <div className="pt-3 border-t border-gray-700">
-                <label htmlFor="logo-upload-mobile" className="cursor-pointer">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="bg-transparent border-blue-500 text-blue-300 hover:bg-blue-500/10 w-full"
-                  >
-                    <Upload className="h-4 w-4 mr-2" />
-                    Upload Logo
-                  </Button>
-                </label>
-                <Input
-                  id="logo-upload-mobile"
-                  type="file"
-                  accept="image/*"
-                  className="hidden"
-                />
-              </div>
             </div>
           </nav>
         )}

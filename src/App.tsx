@@ -13,7 +13,9 @@ import MultiDisciplinary from "./pages/MultiDisciplinary";
 import ClubDeRise from "./pages/ClubDeRise";
 import NewsLetters from "./pages/NewsLetters";
 import ScrollToTop from "@/components/ScrollToTop";
-import CareerNewsletter from "./pages/CareerNewsletter";
+import OfflineWorkShops from "./pages/OfflineWorkShops";
+import OnlineWorkShops from "./pages/OnlineWorkShops";
+import NexusGBC from "./pages/NexusGBC";
 
 
 const queryClient = new QueryClient();
@@ -34,7 +36,9 @@ const App = () => (
           <Route path="/multi-disciplinary" element={<MultiDisciplinary />} />
           <Route path="/club-de-rise" element={<ClubDeRise />} />
           <Route path="/news-letters" element={<NewsLetters />} />
-          <Route path="/offline-session" element={<CareerNewsletter />} />
+          <Route path="/offline-session" element={<OfflineWorkShops />} />
+          <Route path="/online-session" element={<OnlineWorkShops />} />
+          <Route path="/nexus-gbc" element={<NexusGBC />} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

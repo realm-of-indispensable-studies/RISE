@@ -11,6 +11,7 @@ interface NewsItem {
 interface NewsCardProps {
   news: NewsItem;
   isMobile?: boolean;
+  type: "online" | "offline"
 }
 
 const NewsCard = ({ news, isMobile = false }: NewsCardProps) => {
@@ -28,7 +29,7 @@ const NewsCard = ({ news, isMobile = false }: NewsCardProps) => {
         <div className="p-4">
           <div className="flex items-center text-sm text-gray-500 mb-2">
             <span>{news.views} views</span>
-            <span className="mx-2">•</span>
+            {news.date && <span className="mx-2">•</span>}
             <span>{news.date}</span>
           </div>
           
@@ -49,7 +50,7 @@ const NewsCard = ({ news, isMobile = false }: NewsCardProps) => {
       <div className="flex items-start space-x-6">
         <div className="flex-1">
           <div className="flex items-center text-sm text-gray-500 mb-2">
-            <span className="mx-2">•</span>
+            {news.date && <span className="mx-2">•</span>}
             <span>{news.date}</span>
           </div>
           

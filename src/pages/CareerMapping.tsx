@@ -23,14 +23,14 @@ const CareerMapping = () => {
       title: "Online Workshop Series",
       tagline: "Interactive digital learning sessions designed to enhance your professional skills and career development through expert-led workshops.",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      navigate: () => navigate('/offline-session')
+      navigate: () => navigate('/online-session')
     },
     {
       id: 2,
       title: "Offline Session",
       tagline: "In-person networking and learning opportunities that provide hands-on experience and direct mentorship from industry leaders.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      navigate: () => navigate('/online-session')
+      navigate: () => navigate('/offline-session')
     },
     
   ];

@@ -4,6 +4,7 @@ import BackToTop from '../components/BackToTop';
 import Layout from './Layout';
 import graguate1 from '../../public/graguate1.jpg'
 import graguate2 from '../../public/graguate2.jpg'
+import { useNavigate } from 'react-router-dom';
 
 const headerProps = {
   home: "/#home",
@@ -16,11 +17,14 @@ const headerProps = {
 
 
 const GraguateNexus = () => {
+    const navigate = useNavigate();
+  
   const brands = [
     {
-      title: "RISE Graduate Nexus Chapter",
+      title: "Graduate Nexus GBC",
       tagline: "Empowering the next generation of leaders through innovative programs and networking opportunities.",
-      imageUrl: graguate1
+      imageUrl: graguate1,
+      navigate: () => navigate('/nexus-gbc')
     },
     {
       title: "Tech Nexus",
@@ -67,7 +71,7 @@ const GraguateNexus = () => {
                 title={brand.title}
                 tagline={brand.tagline}
                 image={brand.imageUrl}
-                onClick={() => handleBrandClick(brand.title)}
+                onClick={brand.navigate}
               />
             ))}
           </div>

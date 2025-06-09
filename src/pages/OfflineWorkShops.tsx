@@ -1,6 +1,6 @@
 import NewsCard from "@/components/NewsCard";
 import React, { useEffect, useState } from "react";
-import { newsletters } from "@/data/newsletters";
+import { offlineNewsletters } from "@/data/newsletters";
 import Layout from "./Layout";
 
 const headerProps = {
@@ -12,7 +12,7 @@ const headerProps = {
   aboutUs: "/about-us",
 };
 
-const CareerNewsletter = () => {
+const OfflineWorkShops = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -48,9 +48,9 @@ const CareerNewsletter = () => {
                 : "bg-gray-900 rounded-lg shadow-sm border border-gray-500"
             }
           >
-            {newsletters.map((newsletter) => (
+            {offlineNewsletters.map((newsletter) => (
               <div key={newsletter.id} className={isMobile ? "" : "px-8"}>
-                <NewsCard news={newsletter} isMobile={isMobile} />
+                <NewsCard type="offline" news={newsletter} isMobile={isMobile} />
               </div>
             ))}
           </div>
@@ -62,4 +62,4 @@ const CareerNewsletter = () => {
   );
 };
 
-export default CareerNewsletter;
+export default OfflineWorkShops;
